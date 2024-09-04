@@ -1,8 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 import "./App.css";
+import Person from "./components/Person";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App: FC = () => {
+  return (
+    <div className="App">
+      <Person name="Umut" age={26} email={"ucangun75@gmail.com"} />
+    </div>
+  );
+};
 
 export default App;
